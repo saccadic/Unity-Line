@@ -34,9 +34,14 @@ public class tree : MonoBehaviour {
 	Vector3 tmp=Vector3.zero;
 	public Vector3 tmp2=Vector3.zero;
 	void Update () {
+		if(i > clone.Length){
+			i = 0;
+		}
+
+
 		tmp2 += tmp;
 		clone[i++].transform.position = tmp2;
-	
+		//clone [i++].transform.localScale /= i * 0.1f;
 		if(i % 100 == 0){
 			tmp2 = Vector3.zero;
 			tmp = Vector3.zero;

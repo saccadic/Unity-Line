@@ -43,6 +43,8 @@ public class line : MonoBehaviour {
 	public Color change;
 	void Update(){
 	
+
+
 		for(int i=0;i<clone.Length;i++){
 			line_obj.SetPosition(i,clone[i].transform.position);
 			//change = new Color(Random.value, Random.value, Random.value, 1.0f);

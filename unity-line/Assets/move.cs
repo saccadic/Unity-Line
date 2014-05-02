@@ -46,6 +46,7 @@ public class move : MonoBehaviour {
 	private void OnTriggerEnter(Collider other)
 	{
 		trigger = true;
+
 	}
 	
 	private void OnTriggerStay(Collider other)
